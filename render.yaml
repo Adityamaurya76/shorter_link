@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: shorter_link
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        sync: false
+      - key: MONGO_URI
+        sync: false
+
